@@ -236,6 +236,8 @@ hr{
 
 .introSlide{
     color: rgb(235, 225, 98);
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .texto-slide{
