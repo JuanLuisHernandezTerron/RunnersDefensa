@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/*--------------------------------------------------------------------------------------------------------------------------------
+Project: UD04-T01-EVALUABLE-Blog en Bootstrap
+Version : 1.0
+Last Change: 26.01.2023
+Assigned to: Juan Luis Hernandez terron
+ [TABLA DE CONTENIDOS]
+ 0. Body
+ 1. Header
+ 2. Navegador
+ 3. Migas de Pan
+ 4. Section
+ 5. Aside
+ 6. Footer
+ 7. Registro
+*/
+
+/*0.BODY*/
+p,h5,hr{
+    color: rgb(0, 0, 0);
+
+}
+.icons{
+    color: rgb(0, 0, 0) !important;
+}
+.content2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    border-radius: 20px;
+    font-size: 25px;
+    color: #000000;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+#video{
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+    bottom: 0;
+    right: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.BodyNone{
+    display: none;
+}
+
+.BodyMostrar{
+    display: block;
+}
+/*1.HEADER*/
+.i-sol{
+    font-size: 22px;
+}
+
+.i-luna{
+    font-size: 22px;
+}
+
+.logo-header{
+    width: 15%;
+    margin: auto;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+header{
+    background-color: rgb(193, 193, 188);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+header img,.hoverInfo1{
+    transition: 0.5s ease-in-out;
+}
+
+.logo-header:hover{
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(313deg) brightness(101%) contrast(103%);
+}
+
+header h2{
+    font-family: 'Permanent Marker', cursive;
+    transition: 0.5s ease-in-out;
+}
+
+header h2:hover,.footer-p, .list-group-item{
+    color: white;
+}
+
+/*2.Navegador*/
+
+@keyframes slidein {
+    from {
+      width: 100%;
+      transition: cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    75%{
+        margin-left: 25%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+.buscadores{
+    margin-top: 0.2%;
+}
+
+.anadirEntrada,.content{
+    transition: 0.5s ease-in-out;
+    color: aliceblue;
+}
+
+.anadirEntrada:hover .content::before{
+    content: "Añadir Entrada";
+    animation: 1s slidein;
+}
+
+.logoPlus{
+    font-size: 140%;
+}
+
+.content{
+    white-space: nowrap;
+    margin-left: 38%;
+    margin-top: -33%;
+}
+
+.foto-lupa{
+    z-index: 1;
+    font-size: 120%;
+    color: aliceblue;
+}
+
+.div{
+    color: aliceblue;
+}
+
+
+.enlaceOlvido{
+    color: rgb(81, 81, 224);
+    font-size: 10px;
+}
+
+/*3.Migas de pan*/
+a{
+    color: black;
+    text-decoration: none !important;
+}
+
+/*4.Section*/
+hr{
+    width: 80%;
+    border: 2px solid ;
+}
+
+.body{
+    background-color: rgb(193, 193, 188);
+}
+
+.section-tittle{
+    font-family: 'Permanent Marker', cursive;
+}
+/*Eventos*/
+/*Evento-1*/
+.imagenEvent1{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid black;
+}
+
+.infoIMG1{
+    width: 75%;
+    margin: auto;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid black;
+}
+
+.hoverInfo1:hover,.hoverInfo2:hover{
+    transform: scale(1.02);
+}
+/*Evento-2*/
+.imagenEvent2{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 1px solid black;
+}
+
+.hoverInfo2{
+    transition: 0.5s ease-in-out;
+}
+
+/*5.Aside*/
+.img-banner{
+    min-width: 150px;
+    max-width: 350px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tittle-aside{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.redes{
+    font-size: 35px;
+}
+
+.openSesion{
+    font-size: 14px;
+}
+
+.login{
+    height: 35px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.introSlide{
+    color: rgb(235, 225, 98);
+}
+
+.texto-slide{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*6.Footer*/
+footer{
+    background-color: black;
+}
+
+.list-group-item{
+    background-color: black;
+    border-width: 10%;
+}
+
+.logo-footer{
+    width: 15%;
+    max-width: 35px;
+    min-width: 20px;
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(313deg) brightness(101%) contrast(103%);
+}
+
+.hr-footer{
+    color: rgb(247, 247, 247);
+}
+
+@media only screen and (max-width: 1170px){
+    .tittle-aside{
+        font-size: 30px;
+    }
+
+    .redes{
+        font-size: 30px;
+    }
+
+    .footer-p, .list-group-item{
+        font-size: 12px;
+    }
+}
+.footer-p p{
+    color: white !important;
+}
+/*7.Registro*/
+.cancelar{
+    height: 50px;
+    background-color: rgb(236, 135, 135);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.enviar{
+    height: 50px;
+    background-color: rgb(151, 228, 132);
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.form-control,.input-group-text{
+    height: 30px;
+}
+
+@media only screen and (max-width:768px){
+    .anadirEntrada:hover .content::before{
+    color: white;
+    }
+}
